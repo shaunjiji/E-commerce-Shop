@@ -7,6 +7,14 @@ function App() {
   return (
     <>
       <Navbar />
+      <section>
+        <img src={mainImage} alt=""></img>
+        {products.map((product) => (
+          <ul key={product.id}>
+            <img src={product.thumbnail} alt="" />
+          </ul>
+        ))}
+      </section>
     </>
   );
 }
